@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #999797;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(0,0, 128, .1),rgba(0,0, 128, .1)), url("../../assets/img/clock-face.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.clock .sec {
+    width: 4px;
+    height: 160px;
+    background-color: #df0000;
+    top: 40px;
+}
+
+.clock .min {
+    width: 5px;
+    height: 145px;
+    background-color: #000;
+    top: 55px;
+}
+
+.clock .hour {
+    width: 6px;
+    height: 115px;
+    background-color: #050529;
+    top: 85px;
+}
+.clock .sec, .clock .min, .clock .hour {
+    position: absolute;
+    left: 198px;
+    transform-origin: bottom;
+    border-radius: 100% 100% 0 0;
+}
